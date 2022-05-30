@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color: blue;">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <h1 style="font-family: 'Comic Sans MS'; color:rgb(145, 170, 197); text-align: center;">
+        Search Engine Results
+      </h1>
+      <div>
+        <h2 style="font-family: 'Comic Sans MS'; color:rgb(145, 170, 197); text-align: center;"> {{ query }}: </h2>
+      </div>
+      <div>
+        <div style="color:rgb(145, 170, 197); text-align: center;">{% for result in results %} {{result}} <br />
+          {%endfor%}
+        </div>
+      </div>
+
+      <br />
+      <a href="http://127.0.0.1:5000"> <button>back</button> </a>
+    </div>
+  </body>
+</html>
